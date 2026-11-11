@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Roumaissa ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#fff0f5,#ffd6e7,#ffb6cf,#fce4ec);
+    background-size: 300% 300%;
+    animation: bgMove 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #7d2349;
+}
+
+@keyframes bgMove {
+    0%,100% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+}
+
+.card {
+    width: 90%;
+    max-width: 430px;
+    min-height: 570px;
+    padding: 35px 23px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 30px;
+    background: rgba(255,255,255,.53);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(180,55,105,.18);
+    position: relative;
+    z-index: 2;
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from {opacity:0; transform:translateY(35px) scale(.94)}
+    to {opacity:1; transform:translateY(0) scale(1)}
+}
+
+.top-label {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #ffe1ed;
+    color: #c04475;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 17px;
+}
+
+h1 {
+    font-family: 'Playfair Display',serif;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #a65a78;
+}
+
+.bear {
+    font-size: 115px;
+    margin: 20px 0 15px;
+    display: inline-block;
+    animation: bear 2.5s ease-in-out infinite;
+    filter: drop-shadow(0 10px 8px #d77c9d44);
+}
+
+@keyframes bear {
+    0%,100% {transform:translateY(0) rotate(-4deg)}
+    50% {transform:translateY(-13px) rotate(4deg)}
+}
+
+.speech {
+    background: white;
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px #c45a8020;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.speech:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 48%;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: white transparent transparent;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    min-height: 90px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1),
+                box-shadow .3s, opacity .3s;
+}
+
+#yes {
+    background: linear-gradient(135deg,#ff4f91,#e91e63);
+    color: white;
+    padding: 15px 35px;
+    font-size: 17px;
+    box-shadow: 0 8px 20px #e91e6350;
+    z-index: 2;
+}
+
+#yes:hover {
+    box-shadow: 0 12px 28px #e91e6370;
+}
+
+#no {
+    background: white;
+    color: #d44c7b;
+    padding: 14px 30px;
+    font-size: 15px;
+    box-shadow: 0 5px 15px #d44c7b25;
+}
+
+.footer {
+    margin-top: 32px;
+    font-size: 11px;
+    color: #bc7993;
+    letter-spacing: 1px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    animation: appear 1s ease;
+}
+
+.success h1 {
+    font-size: 39px;
+    color: #e91e63;
+}
+
+.big-heart {
+    font-size: 105px;
+    margin: 25px 0;
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+    0%,100% {transform:scale(1)}
+    50% {transform:scale(1.18)}
+}
+
+.message {
+    font-family: 'Playfair Display',serif;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-top: 20px;
+    color: #8c3157;
+}
+
+.signature {
+    margin-top: 25px;
+    color: #e91e63;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sparkle {
+    position: absolute;
+    animation: sparkle 3s infinite;
+    opacity: .6;
+}
+
+@keyframes sparkle {
+    50% {transform:scale(1.5) rotate(30deg);opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card" id="mainCard">
+
+    <div class="top-label">♡ HAPPY VALENTINE'S DAY ♡</div>
+
+    <div id="question">
+        <h1>Hey, Roumaissa...</h1>
+        <p class="subtitle">Someone has a little question for you.</p>
+
+        <div class="bear">🧸</div>
+
+        <div class="speech">
+            واش كتـبغيني؟ 💗
+        </div>
+
+        <div class="buttons">
+            <button id="yes" onclick="sayYes()">اه ❤️</button>
+            <button id="no" onclick="sayNo()">لا 🙈</button>
+        </div>
+
+        <div class="footer">
+            MADE WITH LOVE JUST FOR YOU ♡
+        </div>
+    </div>
+
+    <div id="success" class="hidden success">
+        <div class="top-label">♡ MY FAVORITE PERSON ♡</div>
+
+        <div class="bear">🧸💗</div>
+
+        <h1>YAYYYY!</h1>
+
+        <div class="big-heart">❤️</div>
+
+        <p class="message">
+            Roumaissa, you make every little moment special.
+            <br>
+            You deserve all the love, happiness and beautiful
+            moments in this world.
+            <br><br>
+            I hope this little website made you smile.
+            💕
+        </p>
+
+        <div class="signature">
+            Forever sending you love ♡
+        </div>
+    </div>
+
+</div>
+
+<script>
+let noClicks = 0;
+let yesScale = 1;
+let noScale = 1;
+
+const yes = document.getElementById("yes");
+const no = document.getElementById("no");
+
+function sayNo() {
+    noClicks++;
+
+    yesScale += 0.22;
+    noScale *= 0.72;
+
+    yes.style.transform = `scale(${yesScale})`;
+    no.style.transform = `scale(${noScale})`;
+
+    const messages = [
+        "واش متأكدة؟ 🥺",
+        "فكري مزيان 🙈",
+        "قلبك كيقول شي حاجة أخرى 💗",
+        "آخر فرصة ههه 🧸",
+        "راه آه كتكبر 😭"
+    ];
+
+    document.querySelector(".speech").textContent =
+        messages[Math.min(noClicks - 1, messages.length - 1)];
+
+    if (noScale < 0.12) {
+        no.style.opacity = "0";
+        no.style.pointerEvents = "none";
+    }
+}
+
+function sayYes() {
+    document.getElementById("question").classList.add("hidden");
+    document.getElementById("success").classList.remove("hidden");
+
+    for (let i = 0; i < 70; i++) {
+        setTimeout(createHeart, i * 45);
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.textContent = ["❤️","💗","💕","💖","🌸","✨"][Math.floor(Math.random()*6)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 8000);
+}
+
+// Floating hearts in the background
+setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
